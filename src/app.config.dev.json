@@ -1,0 +1,7 @@
+{
+    "title": "App Title",
+    "splashText": "Some splash text",
+    "ADALTENANT": "{{Your Azure Tenant Id}}",
+    "ADALCLIENTID": "{{Your Azure Client Id}}",
+    "defaultPageSize": 50
+}

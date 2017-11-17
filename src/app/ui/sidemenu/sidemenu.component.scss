@@ -1,0 +1,28 @@
+
+
+.drawer-menu-list .mat-button {
+    min-width: auto;
+}
+
+.drawer-menu-toggle {
+    position: fixed !important;
+    bottom: 12px;
+    right: 12px;
+}
+
+
+/*
+.drawer-menu {
+    & {
+        background: rgb(56, 53, 53);
+    }
+    mat-nav-list,
+    .mat-list-item,
+    .mat-icon {
+        color: #ffffff;
+    }
+    .mat-divider {
+        border-top-color: #666;
+    }
+}
+*/

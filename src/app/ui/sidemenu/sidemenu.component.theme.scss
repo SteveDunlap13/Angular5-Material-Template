@@ -1,0 +1,21 @@
+
+@import '~@angular/material/theming';
+
+@mixin sidemenu-theme($theme, $highlight-palette, $isDark) {
+
+    // define our colour variables from our main theme palettes
+    $primary-color: map-get($theme, primary);
+    $secondary-color: map-get($theme, accent);
+    $warn-color:  map-get($theme, warn);
+    
+
+    .drawer-menu {
+
+        background-color: mat-color($highlight-palette);
+        color: mat-color($primary-color, A100);
+
+        @if $isDark {
+            color: mat-color($primary-color, default-contrast);
+        }       
+    }
+}

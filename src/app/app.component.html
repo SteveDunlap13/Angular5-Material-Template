@@ -1,0 +1,26 @@
+
+<div class="layout-fixed" [class.dark-theme]="isDarkTheme">
+
+    <app-header></app-header>
+
+    <mat-sidenav-container #sidenavContainer>
+
+        <mat-sidenav fxHide fxShow.gt-xs="true" #sidenav mode="side" opened="true" fixedInViewport="true" fixedTopGap="64" fixedBottomGap="0" class="drawer-menu">
+
+            <side-menu></side-menu>
+
+        </mat-sidenav>
+
+        <mat-sidenav-content [ngClass]="isSideMenuOpen ? 'drawer-menu-closed' : ''">
+            <main class="main-content">
+                 
+                <router-outlet></router-outlet>
+                
+            </main>
+        </mat-sidenav-content>
+
+    </mat-sidenav-container>
+
+    <fx-version></fx-version>                
+    
+</div>

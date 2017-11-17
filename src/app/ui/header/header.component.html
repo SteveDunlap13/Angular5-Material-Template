@@ -1,0 +1,36 @@
+
+<mat-toolbar class="header">
+
+    <mat-toolbar class="toolbar">
+        <h4 class="subtitle" [routerLink]="'/dashboard'">{{baseTitle}}{{title}}</h4>
+    </mat-toolbar>
+
+    <button mat-button (click)="signIn()" *ngIf="!signedIn" fxHide fxShow.gt-xs="true">
+        <mat-icon>fingerprint</mat-icon>
+        <span>Sign in</span>
+    </button>
+
+    <button mat-button (click)="signOut()" *ngIf="signedIn" fxHide fxShow.gt-xs="true">
+        <mat-icon>lock_outline</mat-icon>
+        <span>Sign out</span>
+    </button>
+
+
+    <button mat-button fxHide fxShow.gt-xs="true">
+        <mat-icon>help_outline</mat-icon>
+    </button>
+
+    <button mat-button (click)="changeTheme()" fxHide fxShow.gt-xs="true">
+        <mat-icon>invert_colors</mat-icon>
+    </button>
+
+    <!-- mobile menu -->
+    <button mat-button [matMenuTriggerFor]="mobilemenu" fxHide fxShow.lt-sm="true">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #mobilemenu="matMenu">
+        <menu-contents></menu-contents>
+    </mat-menu>
+    
+
+</mat-toolbar>

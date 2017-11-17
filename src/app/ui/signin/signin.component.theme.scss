@@ -1,0 +1,27 @@
+
+@import '~@angular/material/theming';
+
+@mixin signin-theme($theme, $isDark) {
+
+    // define our colour variables from our main theme palettes
+    $primary-color: map-get($theme, primary);
+    $secondary-color: map-get($theme, accent);
+    $warn-color:  map-get($theme, warn);
+    
+        
+    .signin {
+
+        @if $isDark {
+            color: mat-color($primary-color);
+            //background-color: black;
+            
+        } else {
+              color: mat-color($primary-color, default-contrast);
+              //background-color: mat-color($primary-color, 900);
+        }
+    }
+
+    .sign-in-card {
+        background-color: mat-color($warn-color);
+    }
+}

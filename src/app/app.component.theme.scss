@@ -1,0 +1,22 @@
+
+@import '~@angular/material/theming';
+
+@mixin app-theme($theme, $isDark) {
+
+    // define our colour variables from our main theme palettes
+    $primary-color: map-get($theme, primary);
+    $secondary-color: map-get($theme, accent);
+    $warn-color:  map-get($theme, warn);
+    
+        
+    .mat-sidenav-container, .main-content {
+
+        background-color: mat-color($primary-color, 100);
+        
+        @if $isDark {
+            //color: mat-color($primary-color);
+            background-color: mat-color($primary-color, default-contrast);
+            
+        } 
+    }
+}

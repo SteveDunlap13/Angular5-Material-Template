@@ -1,0 +1,23 @@
+
+@import '~@angular/material/theming';
+
+@mixin dashboard-theme($theme, $isDark) {
+
+    // define our colour variables from our main theme palettes
+    $primary-color: map-get($theme, primary);
+    $secondary-color: map-get($theme, accent);
+    $warn-color:  map-get($theme, warn);
+    
+        
+    .dashboard {
+
+        @if $isDark {
+            color: mat-color($primary-color);
+            background-color: black;
+            
+        } else {
+                color: mat-color($primary-color, default-contrast);
+                background-color: mat-color($primary-color, A100);
+        }
+    }
+}

@@ -1,0 +1,16 @@
+
+@import '~@angular/material/theming';
+
+@mixin header-theme($theme, $isDark) {
+
+    $primary-color: map-get($theme, primary);
+    $secondary-color: map-get($theme, accent);
+    $warn-color:  map-get($theme, warn);
+    
+
+    .header, .toolbar {
+
+        color: mat-color($primary-color, A200);
+        background-color: mat-color($primary-color);
+    }
+}

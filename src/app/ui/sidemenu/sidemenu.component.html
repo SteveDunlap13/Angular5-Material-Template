@@ -1,0 +1,18 @@
+
+<mat-nav-list class="drawer-menu-list">
+
+    <!--
+    <button mat-button [routerLink]="'/' + res.path" (click)="setResource(res)" [matTooltip]="res.title">
+        <mat-icon class="fa fa-2x {{getIcon(res)}}" aria-label="res.title"></mat-icon>
+        <span>{{res.title}}</span>
+    </button>
+    -->
+
+    <menu-contents></menu-contents>
+
+</mat-nav-list>
+
+<button mat-mini-fab (click)="toggleSideMenu()" class="drawer-menu-toggle">
+    <mat-icon class="mat-18" *ngIf="!isSideMenuOpen">keyboard_arrow_right</mat-icon>
+    <mat-icon class="mat-18" *ngIf="isSideMenuOpen">keyboard_arrow_left</mat-icon>
+</button>

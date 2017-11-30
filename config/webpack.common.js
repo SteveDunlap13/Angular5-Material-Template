@@ -3,7 +3,6 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const helpers = require('./helpers');
-//const DashboardPlugin = require('webpack-dashboard/plugin');
 
 
 
@@ -85,9 +84,5 @@ module.exports = {
       template: 'src/index.html',
       title: 'Output Management'
     })
-
-    //new DashboardPlugin({
-    //  port: 3000
-    //})
   ]
 };

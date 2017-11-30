@@ -14,9 +14,7 @@
         background-color: mat-color($primary-color, 100);
         
         @if $isDark {
-            //color: mat-color($primary-color);
-            background-color: mat-color($primary-color, default-contrast);
-            
+            background-color: mat-color($primary-color, default-contrast);            
         } 
     }
 }

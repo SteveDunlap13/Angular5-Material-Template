@@ -37,8 +37,6 @@ import {
   LoadingSpinnerComponent,
   DtsAdalService,
   ConfigurationService,
-  //TargaryenAuthenticationService,
-  //ResourceService,
   ExternalResourceService,
   LoadingSpinnerService
 } from './services';
@@ -96,12 +94,10 @@ export function init(config: ConfigurationService) {
       'multi': true
     },
     ConfigurationService,
-    //TargaryenAuthenticationService,
     LoadingSpinnerService,
     AuthGuard,
     AdalService,
     DtsAdalService,
-    //ResourceService,
     ExternalResourceService
   ],
 

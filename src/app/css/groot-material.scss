@@ -2,7 +2,7 @@
 @import '~@angular/material/theming';
 
 
-$brand-dynacare-teal: (
+$brand-teal: (
     50 : #e0f5f8,
     100 : #b3e7ee,
     200 : #80d7e3,
@@ -35,7 +35,7 @@ $brand-dynacare-teal: (
     )
 );
 
-$brand-dynacare-blue: (
+$brand-blue: (
     50 : #e8f2fb,
     100 : #c6ddf5,
     200 : #a0c7ef,
@@ -68,7 +68,7 @@ $brand-dynacare-blue: (
     )
 );
 
-$brand-dynacare-green: (
+$brand-green: (
     50 : #eff7e4,
     100 : #d7ecbc,
     200 : #bcdf90,
@@ -101,7 +101,7 @@ $brand-dynacare-green: (
     )
 );
 
-$brand-dynacare-orange: (
+$brand-orange: (
     50 : #fdf5e0,
     100 : #fbe5b3,
     200 : #f9d480,
@@ -147,7 +147,6 @@ $brand-dynacare-orange: (
 @import "../ui/header/header.component.theme.scss";
 @import "../ui/signin/signin.component.theme.scss";
 @import "../ui/dashboard/dashboard.component.theme.scss";
-//@import "../ui/footer/footer.component.theme.scss";
 
 
 // group all child resource themes
@@ -158,15 +157,14 @@ $brand-dynacare-orange: (
     @include header-theme($theme, $isDark);
     @include signin-theme($theme, $isDark);
     @include dashboard-theme($theme, $isDark);
-    //@include footer-theme($theme, $isDark);
 }
 
 
 // Default light theme
-$primary-palette: mat-palette($brand-dynacare-blue);
-$accent-palette:  mat-palette($brand-dynacare-orange);
+$primary-palette: mat-palette($brand-blue);
+$accent-palette:  mat-palette($brand-orange);
 $warn-palette:  mat-palette($mat-red);
-$highlight-palette:  mat-palette($brand-dynacare-green);
+$highlight-palette:  mat-palette($brand-green);
 
 $valyrian-theme: mat-light-theme($primary-palette, $accent-palette, $warn-palette);
 
@@ -183,10 +181,10 @@ $valyrian-theme: mat-light-theme($primary-palette, $accent-palette, $warn-palett
 // Dark theme selectable via header component emmited to app component
 .dark-theme {
 
-    $primary-palette: mat-palette($brand-dynacare-blue);
-    $accent-palette:  mat-palette($brand-dynacare-orange);
+    $primary-palette: mat-palette($brand-blue);
+    $accent-palette:  mat-palette($brand-orange);
     $warn-palette:  mat-palette($mat-red);
-    $highlight-palette:  mat-palette($brand-dynacare-green);
+    $highlight-palette:  mat-palette($brand-green);
 
     $valyrian-theme: mat-dark-theme($primary-palette, $accent-palette, $warn-palette);
     

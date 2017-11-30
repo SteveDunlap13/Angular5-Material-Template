@@ -29,10 +29,6 @@ body {
 
 .drawer-menu-closed {
     margin-left: 280px !important;        
-    
-    .main-content {
-        //margin-left: 280px !important;        
-    }
 }
 
 .main-content {
@@ -49,6 +45,5 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    //height: calc(100vh - 64px);
     border: dashed 1px red;
 }
